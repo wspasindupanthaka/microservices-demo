@@ -1,0 +1,5 @@
+twitter-to-kafka-service:
+  twitter-keywords:
+    - Sri Lanka
+  welcome-message: Hello Twitter4j
+
