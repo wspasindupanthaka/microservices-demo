@@ -18690,3 +18690,258 @@ He could never win a gold, it was always de Silva medal 😂
 2021-07-06 19:30:11 [Twitter Stream consumer /  [1][Receiving stream]] INFO  twitter4j.TwitterStreamImpl - Stream closed.
 2021-07-06 19:30:11 [Twitter Stream consumer /  [1][Receiving stream]] INFO  twitter4j.TwitterStreamImpl - Waiting for 250 milliseconds
 2021-07-06 19:30:11 [Twitter Stream consumer /  [1][Waiting for 250 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-07-06 23:06:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-CRU1LP0 with PID 2376 (D:\Courses\Udemy - Event-driven microservices - Spring boot, kafka and elastic\My\Section 3\microservices-demo\twitter-to-kafka-service\target\classes started by AD-004 in D:\Courses\Udemy - Event-driven microservices - Spring boot, kafka and elastic\My\Section 3\microservices-demo)
+2021-07-06 23:06:29 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-06 23:06:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-07-06 23:06:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-06 23:06:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-06 23:06:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-07-06 23:06:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-06 23:06:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3175 ms
+2021-07-06 23:06:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App Started...
+2021-07-06 23:06:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Twitter4j
+2021-07-06 23:06:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Sri Lanka]
+2021-07-06 23:06:33 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-07-06 23:06:33 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering Twitter stream for keywords [Sri Lanka]
+2021-07-06 23:06:33 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-06 23:06:33 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-07-06 23:06:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-06 23:06:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 5.15 seconds (JVM running for 7.054)
+2021-07-06 23:06:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-07-06 23:06:36 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-07-06 23:06:36 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @babarazam258fp: England announce 9 uncapped players 
+Ben Stokes will captain England for the first time in limited-overs cricket.
+Chris…
+2021-07-06 23:06:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RCBTweets: Virat Kohli 2️⃣0️⃣0️⃣8️⃣
+Devdutt Padikkal 2️⃣0️⃣2️⃣1️⃣
+Debut Tour in Sri Lanka 🤝
+
+8️⃣ days to go! 😍
+
+#PlayBold #WeAreChallen…
+2021-07-06 23:06:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @gayu108: SLOT CHANGE FOR SAAKK
+#ShauryaAurAnokhiKiKahani
+#Starplus https://t.co/jKbk9nrlfP
+2021-07-06 23:07:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-CRU1LP0 with PID 2268 (D:\Courses\Udemy - Event-driven microservices - Spring boot, kafka and elastic\My\Section 3\microservices-demo\twitter-to-kafka-service\target\classes started by AD-004 in D:\Courses\Udemy - Event-driven microservices - Spring boot, kafka and elastic\My\Section 3\microservices-demo)
+2021-07-06 23:07:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-06 23:07:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-07-06 23:07:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-06 23:07:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-06 23:07:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-07-06 23:07:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-06 23:07:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2872 ms
+2021-07-06 23:07:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App Started...
+2021-07-06 23:07:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - null
+2021-07-06 23:07:26 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'twitterToKafkaServiceApplication': Invocation of init method failed; nested exception is java.lang.NullPointerException
+2021-07-06 23:07:26 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-07-06 23:07:26 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-06 23:07:26 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'twitterToKafkaServiceApplication': Invocation of init method failed; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:31)
+Caused by: java.lang.NullPointerException: null
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.init(TwitterToKafkaServiceApplication.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
+	... 19 common frames omitted
+2021-07-06 23:08:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-CRU1LP0 with PID 3392 (D:\Courses\Udemy - Event-driven microservices - Spring boot, kafka and elastic\My\Section 3\microservices-demo\twitter-to-kafka-service\target\classes started by AD-004 in D:\Courses\Udemy - Event-driven microservices - Spring boot, kafka and elastic\My\Section 3\microservices-demo)
+2021-07-06 23:08:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-06 23:08:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-07-06 23:08:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-06 23:08:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-06 23:08:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-07-06 23:08:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-06 23:08:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3384 ms
+2021-07-06 23:08:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App Started...
+2021-07-06 23:08:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Twitter4j
+2021-07-06 23:08:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Sri Lanka]
+2021-07-06 23:08:25 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-07-06 23:08:25 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering Twitter stream for keywords [Sri Lanka]
+2021-07-06 23:08:25 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-06 23:08:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-07-06 23:08:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-06 23:08:26 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 5.883 seconds (JVM running for 7.329)
+2021-07-06 23:08:29 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-07-06 23:08:29 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-07-06 23:08:29 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AriffShihab: This is some form of fraud in reporting numbers in Sri Lanka 🇱🇰.  No wonder nobody outside the country believes anything o…
+2021-07-06 23:08:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Nishama94718457: This is hug number in ' sri lanka' .
+
+SLOT CHANGE FOR SAAKK
+#ShauryaAurAnokhiKiKahani https://t.co/6AdJqesuAB
+2021-07-06 23:08:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ESPNcricinfo: Rohit Sharma in #CWC19:
+
+👕 Nine innings
+🏏 648 runs
+🤯 81 average
+💯 Five hundreds
+🙌 One fifty
+
+His fifth century of the tou…
+2021-07-06 23:08:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BCCI: 🗣️ 🗣️: The side is excited for the Sri Lanka tour with Rahul Dravid heading #TeamIndia's coaching staff: @surya_14kumar 
+
+#SLvIND…
+2021-07-06 23:08:52 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text 😳  https://t.co/iZfLGC9Gv5
+2021-07-06 23:08:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BCCI: 🗣️ 🗣️: The side is excited for the Sri Lanka tour with Rahul Dravid heading #TeamIndia's coaching staff: @surya_14kumar 
+
+#SLvIND…
+2021-07-06 23:09:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Nishama94718457: This is hug number in ' sri lanka' .
+
+SLOT CHANGE FOR SAAKK
+#ShauryaAurAnokhiKiKahani https://t.co/6AdJqesuAB
+2021-07-06 23:09:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @IruIrfan12: Most 50s Against Sri Lanka In ODI: 
+
+1) MS Dhoni - 19 😎 
+2) S Tendulkar - 17
+3) M Azharuddin - 15
+4) Inzamam - 15
+
+@msdhoni…
+2021-07-06 23:09:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Farodelibertad_: Los demás países que participaron del encuentro virtual de Xi Jinping por los 100 años del Partido Comunista Chino son…
+2021-07-06 23:09:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @serriish7: #IndiaDestabilizingPakistan
+The president said India, which had been playing the role of a spoiler in Afghanistan, had probl…
+2021-07-06 23:09:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Sanfeliu: Somos el virus 🦠 https://t.co/riAUEURJUD
+2021-07-06 23:10:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @pjmgifts @BTS_twt I'm from Sri Lanka 💜 tysm for this giveaway @BTS_twt
+2021-07-06 23:10:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @sidhant: From Colombo: Indian High Commissioner in Sri Lanka meets Tamil Progressive Alliance delegation; Discusses issues affecting th…
+2021-07-06 23:10:31 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @RogueDravidian: @kryes It irks me that not many people are aware of how Bush Jr was the instigator for the final war, and US's role in…
+2021-07-06 23:10:51 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @gidleitunes: [📊] #SOYEON's "WINDY" ALBUM ITUNES CHART
+
+#4 Denmark
+#6 Canada
+#7 United States
+#10 Australia
+#22 Sri Lanka
+#27 Italy
+#28…
+2021-07-06 23:10:53 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text So the whole squad that trounced Sri Lanka in the recent ODI series is isolating after a Covid outbreak & will all miss the entire Pakistan series. Yet NOT ONE mention on @BBCNews #PissPoor @ECB_cricket #ENGvPAK
+2021-07-06 23:10:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @_1amongU @Seriayyan0412 @kryes https://t.co/2DOWrT2Qa2
+2021-07-06 23:11:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Sportskeeda: VVS Laxman has picked his India ODI XI for the upcoming Sri Lanka series 🤩🇮🇳
+
+Do you agree? 🤔
+
+#India #TeamIndia #SLvIND h…
+2021-07-06 23:11:02 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text #ManOfWordsPMIK
+Countries like Switzerland, Thailand, Philippines, Maldives and Sri Lanka demonstrate that sustainable tourism is a tool for development.
+@fiter0 https://t.co/JMgesVcZTQ
+2021-07-06 23:11:05 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Nishama94718457: This is hug number in ' sri lanka' .
+
+SLOT CHANGE FOR SAAKK
+#ShauryaAurAnokhiKiKahani https://t.co/6AdJqesuAB
+2021-07-06 23:11:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Farodelibertad_: Los demás países que participaron del encuentro virtual de Xi Jinping por los 100 años del Partido Comunista Chino son…
+2021-07-06 23:11:17 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Just posted a photo @ Sri Lanka https://t.co/ydv7yWXqqQ
+2021-07-06 23:11:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Nishama94718457: This is hug number in ' sri lanka' .
+
+SLOT CHANGE FOR SAAKK
+#ShauryaAurAnokhiKiKahani https://t.co/6AdJqesuAB
+2021-07-06 23:11:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @epanchjanya: कोलंबो में काम करते दिखे चीनी सैनिक, विपक्ष हुआ हमलावर। पाकिस्तान के साथ ही अब चीन श्रीलंका में आक्रामक नीतियां अपना रहा…
+2021-07-06 23:11:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Nishama94718457: This is hug number in ' sri lanka' .
+
+SLOT CHANGE FOR SAAKK
+#ShauryaAurAnokhiKiKahani https://t.co/6AdJqesuAB
+2021-07-06 23:12:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @gayu108: SLOT CHANGE FOR SAAKK
+#ShauryaAurAnokhiKiKahani
+#Starplus
+2021-07-06 23:12:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ICC: England retain their position at the top of the ICC Men’s @cricketworldcup Super League standings, powered by @MRFWorldwide; Sri L…
+2021-07-06 23:12:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Nishama94718457: This is hug number in ' sri lanka' .
+
+SLOT CHANGE FOR SAAKK
+#ShauryaAurAnokhiKiKahani https://t.co/6AdJqesuAB
+2021-07-06 23:12:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text He is a puppet manipulated by Rsjapakse dirty regime for the power..
+2021-07-06 23:12:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Nishama94718457: This is hug number in ' sri lanka' .
+
+SLOT CHANGE FOR SAAKK
+#ShauryaAurAnokhiKiKahani https://t.co/6AdJqesuAB
+2021-07-06 23:12:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @fiter0: #ManOfWordsPMIK
+Countries like Switzerland, Thailand, Philippines, Maldives and Sri Lanka demonstrate that sustainable tourism…
+2021-07-06 23:12:30 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Sanatan_Prabhat: Chinese military working in Sri Lanka evokes furore & resistance from local citizens
+
+The citizens of Sri Lanka should…
+2021-07-06 23:12:55 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @WisdenIndia: ✅ 122* v South Africa
+✅ 140 v Pakistan
+✅ 102 v England
+✅ 104 v Bangladesh
+✅ 103 v Sri Lanka
+
+#OnThisDay in 2019, Rohit Sha…
+2021-07-06 23:12:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @WomenReadWomen: Ashila Dandeniya is a former garment worker who founded the Stand Up Movement to represent garment workers in Sri Lanka…
+2021-07-06 23:13:15 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Nishama94718457: This is hug number in ' sri lanka' .
+
+SLOT CHANGE FOR SAAKK
+#ShauryaAurAnokhiKiKahani https://t.co/6AdJqesuAB
+2021-07-06 23:13:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @sulorammohan: https://t.co/tduk9jegYU  GSMB Director General says he went undercover to find out more on #illegal sand mining in five p…
+2021-07-06 23:13:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ICC: This day in 2008, Sri Lanka won the Asia Cup, after beating India in the Final by 100 runs.
+
+Player of the Match Ajantha Mendis re…
+2021-07-06 23:13:50 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TheDhoniEra: *Dhoni's 183* against Sri Lanka in 2005 is the highest score by a wicket-keeper.
+
+#HappyBirthdayDhoni |  DHONI40
+2021-07-06 23:13:58 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TheDhoniEra: *Dhoni's 183* against Sri Lanka in 2005 is the highest score by a wicket-keeper.
+
+#HappyBirthdayDhoni |  DHONI40
+2021-07-06 23:14:10 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @sidhant: From Colombo: Indian High Commissioner in Sri Lanka meets Tamil Progressive Alliance delegation; Discusses issues affecting th…
+2021-07-06 23:14:17 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TeluguMSDians: Most 50s Against Sri Lanka In ODI: 
+
+1) MS Dhoni - 19 😎 
+2) S Tendulkar - 17
+3) M Azharuddin - 15
+4) Inzamam - 15
+
+@msdh…
+2021-07-06 23:14:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BCCI: 🗣️ 🗣️: The side is excited for the Sri Lanka tour with Rahul Dravid heading #TeamIndia's coaching staff: @surya_14kumar 
+
+#SLvIND…
+2021-07-06 23:14:42 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TheDhoniEra: *Dhoni's 183* against Sri Lanka in 2005 is the highest score by a wicket-keeper.
+
+#HappyBirthdayDhoni |  DHONI40
+2021-07-06 23:14:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BCCI: 🗣️ 🗣️: The side is excited for the Sri Lanka tour with Rahul Dravid heading #TeamIndia's coaching staff: @surya_14kumar 
+
+#SLvIND…
+2021-07-06 23:14:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text IND vs SL: क्या हार्दिक पांड्या श्रीलंका के खिलाफ करेंगे गेंदबाजी? जानिए बड़ा अपडेट https://t.co/SoQYu6SIKR
+2021-07-06 23:15:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text “The Happy Market” at the Havelock Sports Club – Ready to build a happy community together! | @LankaTalks English | Sri Lanka News
+#havelock #thehappymarket #srilanka https://t.co/MliZIZZQ3f
+2021-07-06 23:15:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @JohnRoss43: Summit of CPC & World Political Parties, speeches Xi Jinping followed by leaders governing parties S. Africa, Kazakhstan, R…
+2021-07-06 23:16:01 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @WomenReadWomen: Ashila Dandeniya is a former garment worker who founded the Stand Up Movement to represent garment workers in Sri Lanka…
+2021-07-06 23:16:09 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @sarah_cone Sri Lanka got CCP'd via OBOR + EXIM Bank wrangling. 
+
+The CCP now has a 99 or 100 year lease on the port. (Facepalm)
+2021-07-06 23:16:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BCCI: 🗣️ 🗣️: The side is excited for the Sri Lanka tour with Rahul Dravid heading #TeamIndia's coaching staff: @surya_14kumar 
+
+#SLvIND…
+2021-07-06 23:17:00 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Farodelibertad_: Los demás países que participaron del encuentro virtual de Xi Jinping por los 100 años del Partido Comunista Chino son…
+2021-07-06 23:17:06 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @WisdenIndia: Bhuvneshwar Kumar in IPL 2021: 3 wickets @ 57.66, Economy rate of 9.1
+
+Will a stint under Rahul Dravid's guidance in Sri L…
+2021-07-06 23:17:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @khaleejtimes: Suspension of flights from Pakistan, Bangladesh, Sri Lanka extended until July 15: @emirates 
+
+Passengers who have connec…
+2021-07-06 23:17:41 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Night is darkest before the dawn.
+Things always seem the worst - right before they improve.
+
+#SriLanka default risk premiums jumped to the highest levels in APAC.
+
+https://t.co/hLL9rk0kUo
+#investing https://t.co/dwNt7MkrPQ
