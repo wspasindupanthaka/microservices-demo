@@ -1,7 +1,7 @@
-package com.microservice.demo.twitter.to.kafka.service;
+package com.microservices.demo.twitter.to.kafka.service;
 
-import com.microservice.demo.config.TwitterToKafkaServiceConfigData;
-import com.microservice.demo.twitter.to.kafka.service.runner.StreamRunner;
+import com.microservices.demo.config.TwitterToKafkaServiceConfigData;
+import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -12,7 +12,7 @@ import twitter4j.TwitterException;
 import javax.annotation.PostConstruct;
 
 @SpringBootApplication
-@ComponentScan("com.microservice.demo") //This helps to find Spring Beans in other modules that have package names starting
+@ComponentScan("com.microservices.demo") //This helps to find Spring Beans in other modules that have package names starting
 //like this.
 public class TwitterToKafkaServiceApplication {
 
