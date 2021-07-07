@@ -37,7 +37,8 @@ public class KafkaAdminClient {
     public KafkaAdminClient(KafkaConfigData kafkaConfigData,
                             RetryConfigData retryConfigData,
                             AdminClient adminClient,
-                            RetryTemplate retryTemplate, WebClient webClient) {
+                            RetryTemplate retryTemplate,
+                            WebClient webClient) {
         this.kafkaConfigData = kafkaConfigData;
         this.retryConfigData = retryConfigData;
         this.adminClient = adminClient;

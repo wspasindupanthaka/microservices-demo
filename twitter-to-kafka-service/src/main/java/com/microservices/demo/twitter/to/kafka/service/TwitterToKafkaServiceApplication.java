@@ -1,6 +1,7 @@
 package com.microservices.demo.twitter.to.kafka.service;
 
 import com.microservices.demo.config.TwitterToKafkaServiceConfigData;
+import com.microservices.demo.twitter.to.kafka.service.init.StreamInitializer;
 import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,19 +13,18 @@ import twitter4j.TwitterException;
 import javax.annotation.PostConstruct;
 
 @SpringBootApplication
-@ComponentScan("com.microservices.demo") //This helps to find Spring Beans in other modules that have package names starting
-//like this.
+@ComponentScan("com.microservices.demo")
 public class TwitterToKafkaServiceApplication {
 
     private static final Logger LOG = LoggerFactory.getLogger(TwitterToKafkaServiceApplication.class);
 
-    private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
-
     private final StreamRunner streamRunner;
 
-    public TwitterToKafkaServiceApplication(TwitterToKafkaServiceConfigData configData, StreamRunner streamRunner) {
-        this.twitterToKafkaServiceConfigData = configData;
+    private final StreamInitializer streamInitializer;
+
+    public TwitterToKafkaServiceApplication(StreamRunner streamRunner, StreamInitializer streamInitializer) {
         this.streamRunner = streamRunner;
+        this.streamInitializer = streamInitializer;
     }
 
     public static void main(String[] args) {
@@ -34,8 +34,7 @@ public class TwitterToKafkaServiceApplication {
     @PostConstruct
     public void init() throws TwitterException {
         LOG.info("App Started...");
-        LOG.info(twitterToKafkaServiceConfigData.getWelcomeMessage());
-        LOG.info(twitterToKafkaServiceConfigData.getTwitterKeywords().toString());
+        streamInitializer.init();
         streamRunner.start();
     }
 
