@@ -156,7 +156,7 @@ public class KafkaAdminClient {
         try {
             topics = retryTemplate.execute(this::doGetTopics);
         } catch (Throwable e) {
-            throw new KafkaClientException("Reached max number of retry for creating kakfa topic(s)");
+            throw new KafkaClientException("Reached max number of retry for creating kafka topic(s)");
         }
         return topics;
     }
