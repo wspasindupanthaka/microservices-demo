@@ -1,17 +1,72 @@
-2021-07-03 20:11:31 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
-2021-07-03 20:11:31 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2021-07-03 20:11:31 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2021-07-03 20:11:31 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration TwitterToKafkaServiceApplication for test class TwitterToKafkaServiceApplicationTest
-2021-07-03 20:11:32 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2021-07-03 20:11:32 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1fe9859, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@c86ba5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@67e137, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@9399a4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@11ae03f, org.springframework.test.context.event.EventPublishingTestExecutionListener@9635fa, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1ab0286, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1c5efee, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@110e0b1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@98290c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@12ca72b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1da80bf]
-2021-07-03 20:11:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest on DESKTOP-CRU1LP0 with PID 30348 (started by AD-004 in D:\Courses\Udemy - Event-driven microservices - Spring boot, kafka and elastic\My\Section 3\microservices-demo\twitter-to-kafka-service)
-2021-07-03 20:11:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTest - No active profile set, falling back to default profiles: default
-2021-07-03 20:11:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App Started...
-2021-07-03 20:11:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello Twitter4j
-2021-07-03 20:11:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microsrevices, Spring, Kafka, ElasticSearch]
-2021-07-03 20:11:33 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
-2021-07-03 20:11:33 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering Twitter stream for keywords [Java, Microsrevices, Spring, Kafka, ElasticSearch]
-2021-07-03 20:11:34 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-07-03 20:11:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTest - Started TwitterToKafkaServiceApplicationTest in 2.649 seconds (JVM running for 5.045)
-2021-07-03 20:11:35 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-07-03 20:11:35 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing Twitter Stream
+2021-07-07 23:14:35 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest], using SpringBootContextLoader
+2021-07-07 23:14:36 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-07-07 23:14:36 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest]: TwitterToKafkaServiceApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-07-07 23:14:36 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTest
+2021-07-07 23:14:36 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-07-07 23:14:36 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@bdc168, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4c78d4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@12a02d9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@11f8234, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b3a9fe, org.springframework.test.context.transaction.TransactionalTestExecutionListener@bee484, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1811d00, org.springframework.test.context.event.EventPublishingTestExecutionListener@923ee6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@89713, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@119c9d2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7ac2c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@191d8c4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@16166aa, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@77614d]
+2021-07-07 23:14:38 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTest - Starting TwitterToKafkaServiceApplicationTest on DESKTOP-CRU1LP0 with PID 23584 (started by AD-004 in D:\Courses\Udemy - Event-driven microservices - Spring boot, kafka and elastic\My\Section 3\microservices-demo\twitter-to-kafka-service)
+2021-07-07 23:14:38 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTest - No active profile set, falling back to default profiles: default
+2021-07-07 23:14:41 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-07-07 23:14:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2021-07-07 23:14:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2021-07-07 23:14:42 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1625679882727
+2021-07-07 23:14:44 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App Started...
+2021-07-07 23:14:44 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Creating 1 topic(s), attempt 0
+2021-07-07 23:14:44 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading Kafka Topics [twitter-topic], attempt 0
+2021-07-07 23:14:48 [main] INFO  c.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2021-07-07 23:14:48 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering Twitter stream for keywords [Sri Lanka]
+2021-07-07 23:14:48 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-07-07 23:14:49 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-07 23:14:50 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTest - Started TwitterToKafkaServiceApplicationTest in 13.557 seconds (JVM running for 16.732)
+2021-07-07 23:14:53 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-07 23:14:53 [SpringContextShutdownHook] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing Twitter Stream
+2021-07-07 23:14:53 [SpringContextShutdownHook] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!

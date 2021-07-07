@@ -1,0 +1,220 @@
+2021-07-07 18:07:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication v0.0.1-SNAPSHOT on f9dbba5be62d with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2021-07-07 18:07:20 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-07 18:07:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-07-07 18:07:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-07 18:07:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-07 18:07:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-07-07 18:07:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-07 18:07:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9368 ms
+2021-07-07 18:07:31 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2021-07-07 18:07:32 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2021-07-07 18:07:32 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2021-07-07 18:07:32 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1625681252279
+2021-07-07 18:07:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App Started...
+2021-07-07 18:07:34 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Creating 1 topic(s), attempt 0
+2021-07-07 18:07:34 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading Kafka Topics [twitter-topic], attempt 0
+2021-07-07 18:07:37 [main] INFO  c.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2021-07-07 18:07:37 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering Twitter stream for keywords [Sri Lanka]
+2021-07-07 18:07:37 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-07-07 18:07:38 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-07 18:07:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-07-07 18:07:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-07 18:07:41 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 25.978 seconds (JVM running for 31.206)
+2021-07-07 18:07:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-07-07 18:07:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-07-07 18:07:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BCCI: How is #TeamIndia beating the heat ?? and staying ? in Sri Lanka? 
+
+We go behind the scenes to find out ??
+
+#SLvIND https://t.co/?
+2021-07-07 18:07:45 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1261746509382639617, "id": 1412835714421587969, "text": "RT @BCCI: How is #TeamIndia beating the heat ?? and staying ? in Sri Lanka? \n\nWe go behind the scenes to find out ??\n\n#SLvIND https://t.co/\u2026", "createdAt": 1625681258000}' to topic='twitter-topic'
+2021-07-07 18:07:45 [Twitter4J Async Dispatcher[0]] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2021-07-07 18:07:45 [Twitter4J Async Dispatcher[0]] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://schema-registry:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2021-07-07 18:07:45 [Twitter4J Async Dispatcher[0]] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2021-07-07 18:07:45 [Twitter4J Async Dispatcher[0]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2021-07-07 18:07:45 [Twitter4J Async Dispatcher[0]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2021-07-07 18:07:45 [Twitter4J Async Dispatcher[0]] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1625681265477
+2021-07-07 18:07:45 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: ZPxcZGqDT0KRhZiHl5QlvQ
+2021-07-07 18:07:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CurranSM: Enjoyable series against Sri Lanka ?? great to win both series. Strange circumstances at the moment but wishing the lads all?
+2021-07-07 18:07:46 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2944547335, "id": 1412835720855576576, "text": "RT @CurranSM: Enjoyable series against Sri Lanka ?? great to win both series. Strange circumstances at the moment but wishing the lads all\u2026", "createdAt": 1625681259000}' to topic='twitter-topic'
+2021-07-07 18:07:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @magioliveira: ANURADHAPURA, SRI LANKA? https://t.co/5WiIweSY7p
+2021-07-07 18:07:59 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1405566089539555332, "id": 1412835775356493829, "text": "RT @magioliveira: ANURADHAPURA, SRI LANKA? https://t.co/5WiIweSY7p", "createdAt": 1625681272000}' to topic='twitter-topic'
+2021-07-07 18:08:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ?
+2021-07-07 18:08:03 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 242093683, "id": 1412835792511291394, "text": "?", "createdAt": 1625681276000}' to topic='twitter-topic'
+2021-07-07 18:08:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @DailyNews_lk: The bilateral ties between #SriLanka and South Korea have reached unprecedented heights covering many areas
+ https://t.co?
+2021-07-07 18:08:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2835583023, "id": 1412835794608340998, "text": "RT @DailyNews_lk: The bilateral ties between #SriLanka and South Korea have reached unprecedented heights covering many areas\n https://t.co\u2026", "createdAt": 1625681277000}' to topic='twitter-topic'
+2021-07-07 18:08:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Great article in @ipimediaworld about the new networking tool launched by @RenaissanceSri  
+https://t.co/Y8ADebQ200
+#networking 
+#networking 
+#tool
+2021-07-07 18:08:22 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1731277770, "id": 1412835873545195520, "text": "Great article in @ipimediaworld about the new networking tool launched by @RenaissanceSri  \nhttps://t.co/Y8ADebQ200\n#networking \n#networking \n#tool", "createdAt": 1625681296000}' to topic='twitter-topic'
+2021-07-07 18:08:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Capturing Sri Lanka?s Ancient, Almost Lost Martial Art https://t.co/bje1Nnmelz
+2021-07-07 18:08:28 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 3319889120, "id": 1412835896542498819, "text": "Capturing Sri Lanka\u2019s Ancient, Almost Lost Martial Art https://t.co/bje1Nnmelz", "createdAt": 1625681301000}' to topic='twitter-topic'
+2021-07-07 18:08:33 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Sri Lanka vs India: Team India Sweats It Out In Colombo During 2nd Intra-Squad Match. See Pics | Cricket?News https://t.co/ot3c24ktZh
+2021-07-07 18:08:33 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 960401787231653889, "id": 1412835915920297987, "text": "Sri Lanka vs India: Team India Sweats It Out In Colombo During 2nd Intra-Squad Match. See Pics | Cricket?News https://t.co/ot3c24ktZh", "createdAt": 1625681306000}' to topic='twitter-topic'
+2021-07-07 18:08:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CricCrazyJohns: BCCI Official (in PTI) said "Prithvi Shaw will be staying in Sri Lanka and complete six matches in the series till July?
+2021-07-07 18:08:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1044511293204381696, "id": 1412835923415293953, "text": "RT @CricCrazyJohns: BCCI Official (in PTI) said \"Prithvi Shaw will be staying in Sri Lanka and complete six matches in the series till July\u2026", "createdAt": 1625681308000}' to topic='twitter-topic'
+2021-07-07 18:08:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Lankarising: Nariya, as known in Sri Lanka or the #Indianjackal  posing for a portrait! Seems to like the idea of being photographed?
+2021-07-07 18:08:39 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1242363937888153601, "id": 1412835944986669056, "text": "RT @Lankarising: Nariya, as known in Sri Lanka or the #Indianjackal  posing for a portrait! Seems to like the idea of being photographed\u2026", "createdAt": 1625681313000}' to topic='twitter-topic'
+2021-07-07 18:09:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text India vs Sri Lanka: Dasun Shanaka set to lead Srilanka in the India series, likely to replace Kusal Perera QATest https://t.co/iiO67I1r33
+2021-07-07 18:09:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1027215045120417793, "id": 1412836049898946566, "text": "India vs Sri Lanka: Dasun Shanaka set to lead Srilanka in the India series, likely to replace Kusal Perera QATest https://t.co/iiO67I1r33", "createdAt": 1625681338000}' to topic='twitter-topic'
+2021-07-07 18:09:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Sabko captaincy milegi ?
+2021-07-07 18:09:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 187459013, "id": 1412836106492547074, "text": "Sabko captaincy milegi ?", "createdAt": 1625681351000}' to topic='twitter-topic'
+2021-07-07 18:09:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CBSL: Issue of Commemorative Coins to Mark the 65th Anniversary of Sri Lanka ? China Diplomatic Relations and 100th Anniversary of Comm?
+2021-07-07 18:09:34 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2835583023, "id": 1412836171647000577, "text": "RT @CBSL: Issue of Commemorative Coins to Mark the 65th Anniversary of Sri Lanka \u2013 China Diplomatic Relations and 100th Anniversary of Comm\u2026", "createdAt": 1625681367000}' to topic='twitter-topic'
+2021-07-07 18:09:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @mufaddal_vohra: According to TOI, the BCCI is not sending either of Prithvi Shaw or Devdutt Padikkal to England for the Test series. Th?
+2021-07-07 18:09:37 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 387556664, "id": 1412836186838626305, "text": "RT @mufaddal_vohra: According to TOI, the BCCI is not sending either of Prithvi Shaw or Devdutt Padikkal to England for the Test series. Th\u2026", "createdAt": 1625681370000}' to topic='twitter-topic'
+2021-07-07 18:09:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @INDOPACOM: Airmen attached to "Red Lancers" of Patrol Squadron 10, conclude joint exercise, Cooperation Afloat Readiness and Training,?
+2021-07-07 18:09:40 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 29741222, "id": 1412836197718794241, "text": "RT @INDOPACOM: Airmen attached to \"Red Lancers\" of Patrol Squadron 10, conclude joint exercise, Cooperation Afloat Readiness and Training,\u2026", "createdAt": 1625681373000}' to topic='twitter-topic'
+2021-07-07 18:09:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Princess_Me_Z: #sivaangi trending in Sri Lanka with 7.5K+ tweets????
+@sivaangi_k
+2021-07-07 18:09:43 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1383788626115391501, "id": 1412836210154770439, "text": "RT @Princess_Me_Z: #sivaangi trending in Sri Lanka with 7.5K+ tweets????\n@sivaangi_k", "createdAt": 1625681376000}' to topic='twitter-topic'
+2021-07-07 18:09:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @CBSL: Issue of Commemorative Coins to Mark the 65th Anniversary of Sri Lanka ? China Diplomatic Relations and 100th Anniversary of Comm?
+2021-07-07 18:09:56 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 4192961459, "id": 1412836267604205570, "text": "RT @CBSL: Issue of Commemorative Coins to Mark the 65th Anniversary of Sri Lanka \u2013 China Diplomatic Relations and 100th Anniversary of Comm\u2026", "createdAt": 1625681390000}' to topic='twitter-topic'
+2021-07-07 18:09:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @NewsWireLK: Sri Lanka secures "All required" AstraZeneca :  Giving Pfizer as 2nd dose to stop - Colombo Mayor  https://t.co/v0KrkqyXTd
+2021-07-07 18:09:57 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 333938108, "id": 1412836268304527362, "text": "RT @NewsWireLK: Sri Lanka secures \"All required\" AstraZeneca :  Giving Pfizer as 2nd dose to stop - Colombo Mayor  https://t.co/v0KrkqyXTd", "createdAt": 1625681390000}' to topic='twitter-topic'
+2021-07-07 18:10:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text landlord in local: calls me Romesh for the craic
+
+me: confused dot com. two fully functioning eyes, no beard, never even been to Sri Lanka. play along cos I am brown like he is.
+
+fellow regular: fully 100% thinks my name is Romesh until I put him right MANY months later
+2021-07-07 18:10:04 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 110454928, "id": 1412836298830893059, "text": "landlord in local: calls me Romesh for the craic\n\nme: confused dot com. two fully functioning eyes, no beard, never even been to Sri Lanka. play along cos I am brown like he is.\n\nfellow regular: fully 100% thinks my name is Romesh until I put him right MANY months later", "createdAt": 1625681397000}' to topic='twitter-topic'
+2021-07-07 18:10:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @INDOPACOM: Airmen attached to "Red Lancers" of Patrol Squadron 10, conclude joint exercise, Cooperation Afloat Readiness and Training,?
+2021-07-07 18:10:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2835583023, "id": 1412836330061582343, "text": "RT @INDOPACOM: Airmen attached to \"Red Lancers\" of Patrol Squadron 10, conclude joint exercise, Cooperation Afloat Readiness and Training,\u2026", "createdAt": 1625681404000}' to topic='twitter-topic'
+2021-07-07 18:10:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text An Experiential Travel Guide to Sri Lanka: 19 Ideas to Get You Started: https://t.co/QPWaSki9Rn via @UMarket #Travel #SriLanka
+2021-07-07 18:10:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 26052862, "id": 1412836334578941954, "text": "An Experiential Travel Guide to Sri Lanka: 19 Ideas to Get You Started: https://t.co/QPWaSki9Rn via @UMarket #Travel #SriLanka", "createdAt": 1625681406000}' to topic='twitter-topic'
+2021-07-07 18:10:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @champikafernand @OfficialSLC All the best Dasun, make Sri Lanka and our school (MSc) proud.
+2021-07-07 18:10:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1405804571910447108, "id": 1412836372587716609, "text": "@champikafernand @OfficialSLC All the best Dasun, make Sri Lanka and our school (MSc) proud.", "createdAt": 1625681415000}' to topic='twitter-topic'
+2021-07-07 18:10:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @wintrucearig everytime i go to sri lanka and see the flavours i wanna cry man i don?t see any of those flavours here it?s criminal
+2021-07-07 18:10:44 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1400581663839641603, "id": 1412836466959519749, "text": "@wintrucearig everytime i go to sri lanka and see the flavours i wanna cry man i don\u2019t see any of those flavours here it\u2019s criminal", "createdAt": 1625681437000}' to topic='twitter-topic'
