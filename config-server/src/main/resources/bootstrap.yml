@@ -5,6 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: file://D:/Courses/Event driven microservices  Spring boot kafka and elastic/My/microservices-demo/config-server-repository
+          uri: https://github.com/wspasindupanthaka/spring-cloud-config-repository
+          defaultLabel: main
+          username: wspasindupanthaka
+          password: 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
           clone-on-start: false
     fail-fast: true
