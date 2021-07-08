@@ -29,6 +29,10 @@ public class TwitterKafkaStatusListener extends StatusAdapter {
         this.twitterStatusToAvroTransformer = transformer;
     }
 
+    /**
+     * Forward message to Kafka when a Twitter has been received
+     * @param status
+     */
     @Override
     public void onStatus(Status status) {
         LOG.info("Twitter status with text {}",status.getText());

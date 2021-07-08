@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://D:/Courses/Udemy - Event-driven microservices - Spring boot, kafka and elastic/My/Section 3/microservices-demo
+          clone-on-start: true
+    fail-fast: true
