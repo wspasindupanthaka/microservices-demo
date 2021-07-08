@@ -5,6 +5,6 @@ spring:
     config:
       server:
         git:
-          uri: file://D:/Courses/Udemy - Event-driven microservices - Spring boot, kafka and elastic/My/Section 3/microservices-demo/config-server-repository
-          clone-on-start: true
+          uri: file://D:/Courses/Event driven microservices  Spring boot kafka and elastic/My/microservices-demo/config-server-repository
+          clone-on-start: false
     fail-fast: true
