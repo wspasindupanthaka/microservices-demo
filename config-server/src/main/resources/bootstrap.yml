@@ -9,7 +9,7 @@ spring:
           defaultLabel: main
           username: wspasindupanthaka
           password: pasindu1992
-          clone-on-start: false
+          clone-on-start: true
     fail-fast: true
   security:
     user:

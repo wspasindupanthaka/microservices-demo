@@ -180,7 +180,11 @@
                 <artifactId>spring-boot-starter-security</artifactId>
                 <version>${spring-boot-starter-security.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>kafka-consumer</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
