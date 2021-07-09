@@ -8,10 +8,10 @@ spring:
           uri: https://github.com/wspasindupanthaka/spring-cloud-config-repository
           defaultLabel: main
           username: wspasindupanthaka
-          password: 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
+          password: ENC(KruvRqDQFqPVFHvfnIPb94C0+C3h4OX4UbuGx2qtSwxCZEYCQ+h6EDDB50V3+PVgMxTGYZRgdFqZjZY816q5ZoKcTUZwsGIoc/HNQMw/KYs=)
           clone-on-start: false
     fail-fast: true
   security:
     user:
       name: spring_cloud_user
-      password: springCloud_Pwd!
+      password: ENC(gvylOXv0I05unrd3erQH0cfuLnJAbhX/ybnYu2UyHnghJCg57e4QEKeQtn1l7Qj+yvwtoSaN5ynwy2he56XgUA==)
