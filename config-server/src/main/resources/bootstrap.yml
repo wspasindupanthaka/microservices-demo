@@ -8,7 +8,7 @@ spring:
           uri: https://github.com/wspasindupanthaka/spring-cloud-config-repository
           defaultLabel: main
           username: wspasindupanthaka
-          password: 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
+          password: pasindu1992
           clone-on-start: false
     fail-fast: true
   security:
