@@ -40,6 +40,7 @@
         <spring-cloud-starter-config.version>2.2.6.RELEASE</spring-cloud-starter-config.version>
         <spring-boot-starter-security.version>2.3.4.RELEASE</spring-boot-starter-security.version>
         <elastic.version>7.9.1</elastic.version>
+        <lucene.version>8.9.0</lucene.version>
     </properties>
 
     <repositories>
@@ -206,6 +207,21 @@
                 <groupId>com.microservices.demo</groupId>
                 <artifactId>elastic-model</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>elastic-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.microservices.demo</groupId>
+                <artifactId>elastic-index-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-core</artifactId>
+                <version>${lucene.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
