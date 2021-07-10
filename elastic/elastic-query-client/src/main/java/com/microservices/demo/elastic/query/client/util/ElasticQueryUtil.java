@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Collections;
 
+@Component
 public class ElasticQueryUtil<T extends IndexModel> {
     public Query getSearchQueryById(String id) {
         return new NativeSearchQueryBuilder()
