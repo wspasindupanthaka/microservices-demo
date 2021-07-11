@@ -33,7 +33,7 @@ public class WebClientConfig {
     WebClient.Builder webClientBuilder() {
         return WebClient.builder()
                 .filter(ExchangeFilterFunctions
-                        .basicAuthentication("userConfigData.getUsername()", "userConfigData.getPassword()"))
+                        .basicAuthentication(userConfigData.getUsername(), userConfigData.getPassword()))
                 .baseUrl(elasticQueryWebClientConfigData.getBaseUrl())
                 .defaultHeader(HttpHeaders.CONTENT_TYPE, elasticQueryWebClientConfigData.getContentType())
                 .defaultHeader(HttpHeaders.ACCEPT, elasticQueryWebClientConfigData.getAcceptType())
