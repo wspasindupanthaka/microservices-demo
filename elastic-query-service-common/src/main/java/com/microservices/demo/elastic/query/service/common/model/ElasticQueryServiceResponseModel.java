@@ -1,6 +1,5 @@
-package com.microservices.demo.elastic.query.service.model;
+package com.microservices.demo.elastic.query.service.common.model;
 
-import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
