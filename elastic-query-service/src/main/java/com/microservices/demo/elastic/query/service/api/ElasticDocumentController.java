@@ -21,6 +21,7 @@ public class ElasticDocumentController {
 
     private final ElasticQueryService elasticQueryService;
 
+
     public ElasticDocumentController(ElasticQueryService elasticQueryService) {
         this.elasticQueryService = elasticQueryService;
     }
