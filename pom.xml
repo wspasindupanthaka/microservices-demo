@@ -12,6 +12,7 @@
         <module>elastic</module>
         <module>common-util</module>
         <module>elastic-query-service</module>
+        <module>elastic-query-web-client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -43,6 +44,7 @@
         <spring-boot-starter-security.version>2.3.4.RELEASE</spring-boot-starter-security.version>
         <elastic.version>7.9.1</elastic.version>
         <lucene.version>8.9.0</lucene.version>
+        <thymeleaf-extras-springsecurity5.version>3.0.4.RELEASE</thymeleaf-extras-springsecurity5.version>
     </properties>
 
     <repositories>
@@ -246,6 +248,17 @@
                 <artifactId>spring-boot-starter-hateoas</artifactId>
                 <version>${spring-boot.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.thymeleaf.extras</groupId>
+                <artifactId>thymeleaf-extras-springsecurity5</artifactId>
+                <version>${thymeleaf-extras-springsecurity5.version}</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
