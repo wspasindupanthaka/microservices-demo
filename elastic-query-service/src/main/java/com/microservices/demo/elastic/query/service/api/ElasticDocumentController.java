@@ -6,6 +6,7 @@ import com.microservices.demo.elastic.query.service.common.model.ElasticQuerySer
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -13,6 +14,7 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+@PreAuthorize("isAuthenticated()")
 @RequestMapping(value = "/documents")
 @RestController
 public class ElasticDocumentController {
@@ -44,6 +46,7 @@ public class ElasticDocumentController {
         return ResponseEntity.ok(elasticQueryServiceResponseModel);
     }
 
+    @PreAuthorize("hasRole('APP_USER_ROLE') || hasAuthority('SCOPE_APP_USER_ROLE')")
     @PostMapping("/get-document-by-text")
     public @ResponseBody
     ResponseEntity<List<ElasticQueryServiceResponseModel>>
