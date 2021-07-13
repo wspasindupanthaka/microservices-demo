@@ -27,6 +27,8 @@ public class KafkaStreamsServiceApplication implements CommandLineRunner {
     }
 
     public static void main(String[] args) {
+        String property = System.getProperty("sun.arch.data.model");
+        System.out.println("******************* "+property);
         SpringApplication.run(KafkaStreamsServiceApplication.class, args);
     }
 

@@ -26,9 +26,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final OAuth2ResourceServerProperties oAuth2ResourceServerProperties;
 
-    @Value("${security.paths-to-ignore}")
-    private String[] pathsToIgnore;
-
     public WebSecurityConfig(KafkaStreamsUserDetailsService kafkaStreamsUserDetailsService,
                              OAuth2ResourceServerProperties oAuth2ResourceServerProperties) {
         this.oAuth2ResourceServerProperties = oAuth2ResourceServerProperties;
@@ -50,13 +47,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .oauth2ResourceServer()
                 .jwt()
                 .jwtAuthenticationConverter(kafkaStreamsUserJwtAuthConverter());
-    }
-
-    @Override
-    public void configure(WebSecurity webSecurity) {
-        webSecurity
-                .ignoring()
-                .antMatchers(pathsToIgnore);
     }
 
     @Bean
