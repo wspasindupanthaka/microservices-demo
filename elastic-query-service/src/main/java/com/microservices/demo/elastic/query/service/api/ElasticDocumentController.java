@@ -60,13 +60,14 @@ public class ElasticDocumentController {
     public @ResponseBody
     ResponseEntity<ElasticQueryServiceAnalyticsResponseModel>
     getDocumentByText(@RequestBody @Valid ElasticQueryServiceRequestModel elasticQueryServiceRequestModel,
-                      @AuthenticationPrincipal TwitterQueryUser principal) {
+                      @AuthenticationPrincipal TwitterQueryUser principal,
+                      @RegisteredOAuth2AuthorizedClient("keycloak")
+                              OAuth2AuthorizedClient oAuth2AuthorizedClient) {
         LOG.info("User {} querying documents for text {}", principal.getUsername(),
                 elasticQueryServiceRequestModel.getText());
-        String token="";
         ElasticQueryServiceAnalyticsResponseModel response =
                 elasticQueryService.getDocumentByText(elasticQueryServiceRequestModel.getText(),
-                        token);
+                        oAuth2AuthorizedClient.getAccessToken().getTokenValue());
         LOG.info("Elasticsearch returned {} of documents on port {}",
                 response.getQueryResponseModels().size(), port);
         return ResponseEntity.ok(response);
