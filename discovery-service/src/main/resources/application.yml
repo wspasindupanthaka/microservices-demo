@@ -1,0 +1,43 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    appname: service-registry-cluster
+
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+  profiles:
+    active: singleserver
+
+
+---
+server:
+  port: 9761
+spring:
+  profiles: peer1
+eureka:
+  instance:
+    hostname: discovery-service-1
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-service-1:9761/eureka/,http://discovery-service-2:9762/eureka/
+
+---
+server:
+  port: 9762
+spring:
+  profiles: peer2
+eureka:
+  instance:
+    hostname: discovery-service-2
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-service-2:9762/eureka/,http://discovery-service-1:9761/eureka/

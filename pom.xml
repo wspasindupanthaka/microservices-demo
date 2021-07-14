@@ -20,6 +20,7 @@
         <module>reactive-elastic-query-web-client</module>
         <module>elastic-query-web-client-2</module>
         <module>kafka-streams-service</module>
+        <module>discovery-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -56,6 +57,8 @@
         <kafka-streams.version>2.6.0</kafka-streams.version>
         <kafka-clients.version>2.6.0</kafka-clients.version>
         <kafka-streams-avro-serde.version>5.5.1</kafka-streams-avro-serde.version>
+        <spring-cloud-starter-netflix-eureka-server.version>2.2.6.RELEASE</spring-cloud-starter-netflix-eureka-server.version>
+        <spring-cloud-starter-netflix-eureka-client.version>2.2.6.RELEASE</spring-cloud-starter-netflix-eureka-client.version>
     </properties>
 
     <repositories>
@@ -304,6 +307,17 @@
                 <artifactId>kafka-clients</artifactId>
                 <version>${kafka-clients.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+                <version>${spring-cloud-starter-netflix-eureka-server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+                <version>${spring-cloud-starter-netflix-eureka-client.version}</version>
+            </dependency>
+
         </dependencies>
 
     </dependencyManagement>

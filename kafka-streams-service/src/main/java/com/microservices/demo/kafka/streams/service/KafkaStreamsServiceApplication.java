@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 
+@EnableDiscoveryClient
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.microservices.demo"})
 public class KafkaStreamsServiceApplication implements CommandLineRunner {
@@ -27,8 +28,6 @@ public class KafkaStreamsServiceApplication implements CommandLineRunner {
     }
 
     public static void main(String[] args) {
-        String property = System.getProperty("sun.arch.data.model");
-        System.out.println("******************* "+property);
         SpringApplication.run(KafkaStreamsServiceApplication.class, args);
     }
 
