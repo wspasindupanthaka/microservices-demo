@@ -5,7 +5,7 @@ eureka:
   instance:
     appname: service-registry-cluster
   server:
-    enable-self-preservation: false
+    enable-self-preservation: true
     expected-client-renewal-interval-seconds: 3
     eviction-interval-timer-in-ms: 2000
 

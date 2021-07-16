@@ -32,6 +32,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         this.kafkaStreamsUserDetailsService = kafkaStreamsUserDetailsService;
     }
 
+    @Value("${security.paths-to-ignore}")
+    private String[] pathsToIgnore;
+
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http
@@ -61,6 +64,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 new DelegatingOAuth2TokenValidator<>(withIssuer, audienceValidator);
         jwtDecoder.setJwtValidator(withAudience);
         return jwtDecoder;
+    }
+
+    @Override
+    public void configure(WebSecurity webSecurity) throws Exception {
+        webSecurity
+                .ignoring()
+                .antMatchers((pathsToIgnore));
     }
 
     @Bean

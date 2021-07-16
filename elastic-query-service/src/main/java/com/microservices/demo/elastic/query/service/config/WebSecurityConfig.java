@@ -3,6 +3,7 @@ package com.microservices.demo.elastic.query.service.config;
 import com.microservices.demo.elastic.query.service.security.TwitterQueryUserDetailsService;
 import com.microservices.demo.elastic.query.service.security.TwitterQueryUserJwtConverter;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,6 +34,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
+    @Value("${security.paths-to-ignore}")
+    private String[] pathsToIgnore;
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
@@ -70,7 +73,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity webSecurity) throws Exception {
         webSecurity
                 .ignoring()
-                .antMatchers("pathsToIgnore");
+                .antMatchers(pathsToIgnore);
     }
 
     @Bean
