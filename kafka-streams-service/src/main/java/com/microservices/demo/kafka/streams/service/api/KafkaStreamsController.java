@@ -12,7 +12,7 @@ import javax.validation.constraints.NotEmpty;
 
 @PreAuthorize("isAuthenticated()")
 @RestController
-@RequestMapping(value = "/", produces = "application/vnd.api.v1+json")
+@RequestMapping(value = "/", produces = "application/json")
 public class KafkaStreamsController {
 
     private static final Logger LOG = LoggerFactory.getLogger(KafkaStreamsController.class);
