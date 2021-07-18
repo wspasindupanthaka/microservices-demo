@@ -37,7 +37,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>pasindu92/config.server:${project.version}</name>
+                        <name>${project.groupId}/config.server:${project.version}</name>
                     </image>
                 </configuration>
                 <executions>
